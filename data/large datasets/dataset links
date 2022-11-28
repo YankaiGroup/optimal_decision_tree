@@ -1,4 +1,9 @@
-Source of large datasets:
+Source of large datasets (> 10,000 samples):
+Avila: https://archive.ics.uci.edu/ml/datasets/Avila : avila-tr.txt
+
+EEG: https://archive.ics.uci.edu/ml/datasets/EEG+Eye+State : EEG Eye State.arff
+
+HTRU: https://archive.ics.uci.edu/ml/datasets/HTRU2 : HTRU_2.csv
 
 Shuttle: https://archive.ics.uci.edu/ml/datasets/Statlog+(Shuttle) : shuttle.trn
 
