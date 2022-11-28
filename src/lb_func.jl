@@ -2,7 +2,7 @@ module lb_func
 
 using Random, Distributions
 using LinearAlgebra, SparseArrays, Statistics, StatsBase
-using MLDataUtils, Clustering #, MLBase
+using MLDataUtils, Clustering
 using JuMP
 using TimerOutputs: @timeit, get_timer
 

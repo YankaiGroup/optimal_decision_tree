@@ -3,13 +3,10 @@ module bb_func
 #using Clustering#, Metaheuristics
 using Printf
 using JuMP
-#using Ipopt, CPLEX#, Gurobi#, SCIP
 using Random, LinearAlgebra, SparseArrays
 using Statistics, StatsBase, Distances
-using TimerOutputs: @timeit, get_timer
 using MPI
 using Distributed, SharedArrays
-#@everywhere using ParallelDataTransfer
 
 @everywhere using Trees, Nodes, branch, bound, parallel, opt_func, ub_func, lb_func, groups
 
@@ -19,10 +16,8 @@ maxiter = 100000000000
 tol = 1e-6
 #time_lapse = 600*6*4 # 1*3600 # 4 hours
 
-
 # function to record the finish time point
 time_finish(seconds) = round(Int, 10^9 * seconds + time_ns())
-
 
 # during iteration: 
 # LB = node.LB is the best LB among all node and is in current iteration

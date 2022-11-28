@@ -1,6 +1,6 @@
 module data_process
 
-using DataFrames, CSV#, RDatasets
+using DataFrames, CSV
 using CategoricalArrays
 using Random
 using LinearAlgebra

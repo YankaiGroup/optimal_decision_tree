@@ -2,10 +2,8 @@ module groups
 
 using Random, Distributions
 using LinearAlgebra, SparseArrays, Statistics, StatsBase
-using MLDataUtils, Clustering #, MLBase
-#using opt_functions
+using MLDataUtils, Clustering
 using JuMP
-using TimerOutputs: @timeit, get_timer
 
 using Distributed, SharedArrays
 using parallel

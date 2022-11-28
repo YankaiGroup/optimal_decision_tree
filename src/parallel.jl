@@ -2,7 +2,6 @@ module parallel
 using MPI
 using StaticArrays, SparseArrays, Serialization
 
-
 function init()
     if !MPI.Initialized()
         MPI.Init()

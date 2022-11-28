@@ -1,9 +1,7 @@
-using DataFrames, CSV#, RDatasets
+using DataFrames, CSV
 using Random, Distributions, StatsBase
-using Plots#, StatsPlots
-#using Conda, PyCall
+using Plots
 using MLDataUtils, Clustering
-#using JLD
 using Distributed, SharedArrays
 # load functions for branch&bound and data preprocess from self-created module
 @everywhere begin

@@ -1,12 +1,9 @@
 module opt_func
 
-#using ScikitLearn
-#using StatsBase
 using Printf
 using JuMP
-using CPLEX #, Gurobi#, SCIP, Ipopt
+using CPLEX
 using Random, SparseArrays
-#using grb_env
 using InteractiveUtils
 using Trees, bound, parallel
 
