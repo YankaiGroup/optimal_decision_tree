@@ -1,0 +1,7 @@
+Source of large datasets:
+
+Shuttle: https://archive.ics.uci.edu/ml/datasets/Statlog+(Shuttle) : shuttle.trn
+
+Skin-segmentation: https://archive.ics.uci.edu/ml/datasets/skin+segmentation : Skin_NonSkin.txt
+
+HT-Sensor: https://archive.ics.uci.edu/ml/datasets/gas+sensors+for+home+activity+monitoring : The final data can be obtained by the provided R code. The label of the test dataset is the column “class” of the file "HT_Sensor_metadata.dat".
