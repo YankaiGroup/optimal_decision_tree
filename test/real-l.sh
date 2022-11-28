@@ -13,8 +13,7 @@ module load intel/2019u4 intelmpi/2019u4
 #module load ddt # load this module to prevent error of julia module loading error
 module load julia/1.7.2
 module load mycplex/20.1.0
-module use /scinet/niagara/software/commercial/modules
-module load gurobi/9.0.2
+
 
 # seeds number for multi-run
 seeds=("1" "2" "3" "4" "5")
