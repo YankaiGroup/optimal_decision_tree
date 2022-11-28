@@ -55,7 +55,7 @@ This repository is the official implementation of [A Scalable Deterministic Glob
 
 * real-l.sh - example shell file to run the code. Line 24 indicate the parallel command and line 25 indicate the serial command. The parallel version is executed through MPI. 
 ### Dataset Files - data/
-All small and medium dataset are listed in the folder. The link of large datasets is listed in file "large\ datasets/dataset\ links". 
+All small and medium dataset are listed in the folder. The link of large datasets is listed in file large-datasets/readme. 
 ## Evaluation
 Please refer to either line 28-33 of real-l.jl or line 25-33 of test.jl file for the meaning of each input parameter.
 
