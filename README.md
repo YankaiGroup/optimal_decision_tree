@@ -5,7 +5,7 @@ This repository is the official implementation of [A Scalable Deterministic Glob
 * Julia v1.7.2
 * CPLEX v20.1.0
 * openmpi v4.1.1 
-    * We also tested Microsoft MPI v10.1.12498.18. Please test other MPI implementations by yourself. 
+    * We also tested intelmpi/2019u4 on Niagara Cluster of Digital Research Alliance of Canada. Please test other MPI implementations by yourself. 
 * Julia Packages
     * CPLEX v0.9.3
     * CSV v0.10.4
