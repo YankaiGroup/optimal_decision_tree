@@ -86,17 +86,15 @@ function branch_bound(X, Y, K, D, warm_start, UB_init, alpha, L_hat, method = "C
         iter += 1
         
         ############# iteratively bound tightening #######################
-        @timeit get_timer("Shared") "Node delete and UB re-update" begin
-            # the following code delete branch with lb close to the global upper bound
-            delete_nodes = []
-            for (idx,n) in enumerate(nodeList)
-                if (((UB-n.LB)<= mingap) || ((UB-n.LB) <=mingap*min(abs(UB), abs(n.LB))))
-                    push!(delete_nodes, idx)
-                end
+        # the following code delete branch with lb close to the global upper bound
+        delete_nodes = []
+        for (idx,n) in enumerate(nodeList)
+            if (((UB-n.LB)<= mingap) || ((UB-n.LB) <=mingap*min(abs(UB), abs(n.LB))))
+                push!(delete_nodes, idx)
             end
-            deleteat!(nodeList, sort(delete_nodes))
-            deleteat!(LB_list, sort(delete_nodes))
-        end # Node delete and UB re-update timer
+        end
+        deleteat!(nodeList, sort(delete_nodes))
+        deleteat!(LB_list, sort(delete_nodes))
         ##################### lower and upper(inside lb function) bound update #####################
         X_rand, Y_rand, X_rproc, Y_rproc, node_rand, ~ = groups.proc_data_preparation(X, Y, p, n_all, K, D, warm_start, method, true, iter)
         node, UB, tree, fathom = getBound(X_proc, Y_proc, X_rproc, Y_rproc, node, node_rand, K, D, eps, UB, tree, alpha_s, L_hat, mingap, method, iter, false) 
