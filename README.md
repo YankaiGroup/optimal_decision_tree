@@ -57,5 +57,5 @@ This repository is the official implementation of [A Scalable Deterministic Glob
 ### Dataset Files - data/
 All small and medium dataset are listed in the folder. The link of large datasets is listed in file large-datasets/readme. 
 ## Evaluation
-Please refer to either line 28-33 of real-l.jl or line 25-33 of test.jl file for the meaning of each input parameter.
+Please refer to either line 28-33 of real-l.sh or line 25-33 of test.jl file for the meaning of each input parameter.
 
