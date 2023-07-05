@@ -39,7 +39,7 @@ scheme = ARGS[4] # sl # par #
 dataname = ARGS[5] # 
 if dataname == "toy"
     nclst = 3 # parse(Int, ARGS[6]) 
-    clst_n = 50 #parse(Int, ARGS[7])
+    clst_n = 50 #parse(Int, ARGS[7]) number of samples in each cluster
     d = 2 # parse(Int, ARGS[8])
 elseif dataname == "iris"
     datapackage = "datasets"
@@ -78,8 +78,7 @@ if parallel.is_root()
     parallel.root_println(size(va_x))
     parallel.root_println(size(te_x))
 
-    L_hat = maximum(counts(lbl))/length(lbl) # L_hat is the error with if predicting the major class for points
-
+    L_hat = maximum(counts(lbl))/length(lbl) # L_hat is the error of predicting all points with the major class    
     alp = 0.05 #alpha # parameter of complexity of the tree
 
     X = Matrix(hcat(tr_x, va_x)) # Matrix(tr_x) # Matrix(data) # 

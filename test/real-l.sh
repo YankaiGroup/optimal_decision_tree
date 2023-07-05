@@ -28,6 +28,6 @@ mpiexec -n ${SLURM_NTASKS} julia test/test.jl 2 CF+MILP+SG ${seeds[0]} par ${dat
     # args[1] maximum depth of the tree
     # args[2] lower bound method: base-dim, base-glb, CF+MILP+SG
     # args[3] random seed value
-    # args[4] mode (parallel or serial)
+    # args[4] mode ("par" for parallel or "sl" for serial)
     # args[5] dataset name
 EOF

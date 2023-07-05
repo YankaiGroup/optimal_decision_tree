@@ -2,7 +2,7 @@ module data_process
 
 using DataFrames, CSV
 using CategoricalArrays
-using Random
+using Random, Distributions
 using LinearAlgebra
 using MLDataUtils, StatsBase
 using ub_func
@@ -88,7 +88,7 @@ function data_generation(clst_n=50, k=3, d=2)
             data[:,((i - 1) * clst_n + 1):(i * clst_n)] = clst
             label[((i - 1) * clst_n + 1):(i * clst_n)] = repeat([i], clst_n)
     end
-    return data, label
+    return data, Int.(label)
 end
 
 function sig_gen(eigvals)
